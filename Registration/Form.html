@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Enter name</label>
+                        <input type="text" name="fullName" id="fullName">
+                        <label class="validation-error hide" id="fullNameValidationError">Please Enter Your Full name</label>
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="text" name="email" id="email">
+                        <label class="validation-error hide" id="emailValidationError">Please Enter Your Email Address</label>
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input type="text" name="pass" id="pass">
+                        <label class="validation-error hide" id="passValidationError">Please Enter Your Password</label>
+                    </div>
+                    <div>
+                        <label>Repeat Password</label>
+                        <input type="text" name="rpass" id="rpass">
+                        <label class="validation-error hide" id="rpassValidationError">Please Enter Your Repeat Password</label>
+                        <label class="validation-error hide" id="rpassValidation2Error">Password does not Match</label>
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Enter name</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>Repeat Password</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="Form.js"></script>
+</body>
+
+</html>
